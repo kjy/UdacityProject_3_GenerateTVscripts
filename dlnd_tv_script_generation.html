@@ -12587,13 +12587,13 @@ Default GPU Device: /gpu:0
 <span class="c1"># Batch Size</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">1024</span>   
 <span class="c1"># RNN Size</span>
-<span class="n">rnn_size</span> <span class="o">=</span> <span class="mi">256</span>  <span class="c1"># RNN size is the number of hidden units for LSTM/RNN cells</span>
+<span class="n">rnn_size</span> <span class="o">=</span> <span class="mi">300</span>  <span class="c1"># RNN size is the number of hidden units for LSTM/RNN cells</span>
 <span class="c1"># Sequence Length</span>
 <span class="n">seq_length</span> <span class="o">=</span> <span class="mi">15</span>
 <span class="c1"># Learning Rate</span>
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span> 
 <span class="c1"># Show stats for every n number of batches</span>
-<span class="n">show_every_n_batches</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">show_every_n_batches</span> <span class="o">=</span> <span class="mi">30</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">DON&#39;T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE</span>
@@ -12717,166 +12717,140 @@ Default GPU Device: /gpu:0
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch    0/4   train_loss = 8.823
-Epoch   6 Batch    1/4   train_loss = 6.286
-Epoch  12 Batch    2/4   train_loss = 6.031
-Epoch  18 Batch    3/4   train_loss = 5.770
-Epoch  25 Batch    0/4   train_loss = 5.555
-Epoch  31 Batch    1/4   train_loss = 5.407
-Epoch  37 Batch    2/4   train_loss = 5.256
-Epoch  43 Batch    3/4   train_loss = 5.046
-Epoch  50 Batch    0/4   train_loss = 4.914
-Epoch  56 Batch    1/4   train_loss = 4.810
-Epoch  62 Batch    2/4   train_loss = 4.710
-Epoch  68 Batch    3/4   train_loss = 4.569
-Epoch  75 Batch    0/4   train_loss = 4.476
-Epoch  81 Batch    1/4   train_loss = 4.421
-Epoch  87 Batch    2/4   train_loss = 4.346
-Epoch  93 Batch    3/4   train_loss = 4.243
-Epoch 100 Batch    0/4   train_loss = 4.175
-Epoch 106 Batch    1/4   train_loss = 4.132
-Epoch 112 Batch    2/4   train_loss = 4.061
-Epoch 118 Batch    3/4   train_loss = 3.972
-Epoch 125 Batch    0/4   train_loss = 3.927
-Epoch 131 Batch    1/4   train_loss = 3.887
-Epoch 137 Batch    2/4   train_loss = 3.814
-Epoch 143 Batch    3/4   train_loss = 3.746
-Epoch 150 Batch    0/4   train_loss = 3.707
-Epoch 156 Batch    1/4   train_loss = 3.680
-Epoch 162 Batch    2/4   train_loss = 3.607
-Epoch 168 Batch    3/4   train_loss = 3.554
-Epoch 175 Batch    0/4   train_loss = 3.513
-Epoch 181 Batch    1/4   train_loss = 3.488
-Epoch 187 Batch    2/4   train_loss = 3.407
-Epoch 193 Batch    3/4   train_loss = 3.370
-Epoch 200 Batch    0/4   train_loss = 3.351
-Epoch 206 Batch    1/4   train_loss = 3.319
-Epoch 212 Batch    2/4   train_loss = 3.248
-Epoch 218 Batch    3/4   train_loss = 3.215
-Epoch 225 Batch    0/4   train_loss = 3.187
-Epoch 231 Batch    1/4   train_loss = 3.172
-Epoch 237 Batch    2/4   train_loss = 3.099
-Epoch 243 Batch    3/4   train_loss = 3.079
-Epoch 250 Batch    0/4   train_loss = 3.048
-Epoch 256 Batch    1/4   train_loss = 3.026
-Epoch 262 Batch    2/4   train_loss = 2.970
-Epoch 268 Batch    3/4   train_loss = 2.939
-Epoch 275 Batch    0/4   train_loss = 2.914
-Epoch 281 Batch    1/4   train_loss = 2.899
-Epoch 287 Batch    2/4   train_loss = 2.832
-Epoch 293 Batch    3/4   train_loss = 2.815
-Epoch 300 Batch    0/4   train_loss = 2.797
-Epoch 306 Batch    1/4   train_loss = 2.772
-Epoch 312 Batch    2/4   train_loss = 2.700
-Epoch 318 Batch    3/4   train_loss = 2.687
-Epoch 325 Batch    0/4   train_loss = 2.672
-Epoch 331 Batch    1/4   train_loss = 2.656
-Epoch 337 Batch    2/4   train_loss = 2.607
-Epoch 343 Batch    3/4   train_loss = 2.590
-Epoch 350 Batch    0/4   train_loss = 2.560
-Epoch 356 Batch    1/4   train_loss = 2.531
-Epoch 362 Batch    2/4   train_loss = 2.487
-Epoch 368 Batch    3/4   train_loss = 2.472
-Epoch 375 Batch    0/4   train_loss = 2.453
-Epoch 381 Batch    1/4   train_loss = 2.433
-Epoch 387 Batch    2/4   train_loss = 2.374
-Epoch 393 Batch    3/4   train_loss = 2.364
-Epoch 400 Batch    0/4   train_loss = 2.350
-Epoch 406 Batch    1/4   train_loss = 2.324
-Epoch 412 Batch    2/4   train_loss = 2.273
-Epoch 418 Batch    3/4   train_loss = 2.279
-Epoch 425 Batch    0/4   train_loss = 2.251
-Epoch 431 Batch    1/4   train_loss = 2.213
-Epoch 437 Batch    2/4   train_loss = 2.186
-Epoch 443 Batch    3/4   train_loss = 2.175
-Epoch 450 Batch    0/4   train_loss = 2.159
-Epoch 456 Batch    1/4   train_loss = 2.145
-Epoch 462 Batch    2/4   train_loss = 2.102
-Epoch 468 Batch    3/4   train_loss = 2.085
-Epoch 475 Batch    0/4   train_loss = 2.063
-Epoch 481 Batch    1/4   train_loss = 2.064
-Epoch 487 Batch    2/4   train_loss = 2.012
-Epoch 493 Batch    3/4   train_loss = 2.011
-Epoch 500 Batch    0/4   train_loss = 2.007
-Epoch 506 Batch    1/4   train_loss = 1.981
-Epoch 512 Batch    2/4   train_loss = 1.938
-Epoch 518 Batch    3/4   train_loss = 1.931
-Epoch 525 Batch    0/4   train_loss = 1.910
-Epoch 531 Batch    1/4   train_loss = 1.901
-Epoch 537 Batch    2/4   train_loss = 1.867
-Epoch 543 Batch    3/4   train_loss = 1.868
-Epoch 550 Batch    0/4   train_loss = 1.857
-Epoch 556 Batch    1/4   train_loss = 1.823
-Epoch 562 Batch    2/4   train_loss = 1.788
-Epoch 568 Batch    3/4   train_loss = 1.798
-Epoch 575 Batch    0/4   train_loss = 1.779
-Epoch 581 Batch    1/4   train_loss = 1.763
-Epoch 587 Batch    2/4   train_loss = 1.726
-Epoch 593 Batch    3/4   train_loss = 1.749
-Epoch 600 Batch    0/4   train_loss = 1.712
-Epoch 606 Batch    1/4   train_loss = 1.699
-Epoch 612 Batch    2/4   train_loss = 1.673
-Epoch 618 Batch    3/4   train_loss = 1.680
-Epoch 625 Batch    0/4   train_loss = 1.654
-Epoch 631 Batch    1/4   train_loss = 1.647
-Epoch 637 Batch    2/4   train_loss = 1.613
-Epoch 643 Batch    3/4   train_loss = 1.613
-Epoch 650 Batch    0/4   train_loss = 1.596
-Epoch 656 Batch    1/4   train_loss = 1.585
-Epoch 662 Batch    2/4   train_loss = 1.567
-Epoch 668 Batch    3/4   train_loss = 1.565
-Epoch 675 Batch    0/4   train_loss = 1.535
-Epoch 681 Batch    1/4   train_loss = 1.530
-Epoch 687 Batch    2/4   train_loss = 1.495
-Epoch 693 Batch    3/4   train_loss = 1.518
-Epoch 700 Batch    0/4   train_loss = 1.490
-Epoch 706 Batch    1/4   train_loss = 1.473
-Epoch 712 Batch    2/4   train_loss = 1.455
-Epoch 718 Batch    3/4   train_loss = 1.463
-Epoch 725 Batch    0/4   train_loss = 1.450
-Epoch 731 Batch    1/4   train_loss = 1.431
-Epoch 737 Batch    2/4   train_loss = 1.390
-Epoch 743 Batch    3/4   train_loss = 1.415
-Epoch 750 Batch    0/4   train_loss = 1.405
-Epoch 756 Batch    1/4   train_loss = 1.375
-Epoch 762 Batch    2/4   train_loss = 1.354
-Epoch 768 Batch    3/4   train_loss = 1.370
-Epoch 775 Batch    0/4   train_loss = 1.349
-Epoch 781 Batch    1/4   train_loss = 1.333
-Epoch 787 Batch    2/4   train_loss = 1.315
-Epoch 793 Batch    3/4   train_loss = 1.311
-Epoch 800 Batch    0/4   train_loss = 1.306
-Epoch 806 Batch    1/4   train_loss = 1.284
-Epoch 812 Batch    2/4   train_loss = 1.262
-Epoch 818 Batch    3/4   train_loss = 1.295
-Epoch 825 Batch    0/4   train_loss = 1.289
-Epoch 831 Batch    1/4   train_loss = 1.260
-Epoch 837 Batch    2/4   train_loss = 1.235
-Epoch 843 Batch    3/4   train_loss = 1.243
-Epoch 850 Batch    0/4   train_loss = 1.227
-Epoch 856 Batch    1/4   train_loss = 1.221
-Epoch 862 Batch    2/4   train_loss = 1.196
-Epoch 868 Batch    3/4   train_loss = 1.208
-Epoch 875 Batch    0/4   train_loss = 1.196
-Epoch 881 Batch    1/4   train_loss = 1.195
-Epoch 887 Batch    2/4   train_loss = 1.161
-Epoch 893 Batch    3/4   train_loss = 1.156
-Epoch 900 Batch    0/4   train_loss = 1.163
-Epoch 906 Batch    1/4   train_loss = 1.150
-Epoch 912 Batch    2/4   train_loss = 1.126
-Epoch 918 Batch    3/4   train_loss = 1.140
-Epoch 925 Batch    0/4   train_loss = 1.133
-Epoch 931 Batch    1/4   train_loss = 1.143
-Epoch 937 Batch    2/4   train_loss = 1.086
-Epoch 943 Batch    3/4   train_loss = 1.111
-Epoch 950 Batch    0/4   train_loss = 1.095
-Epoch 956 Batch    1/4   train_loss = 1.104
-Epoch 962 Batch    2/4   train_loss = 1.071
-Epoch 968 Batch    3/4   train_loss = 1.081
-Epoch 975 Batch    0/4   train_loss = 1.076
-Epoch 981 Batch    1/4   train_loss = 1.071
-Epoch 987 Batch    2/4   train_loss = 1.032
-Epoch 993 Batch    3/4   train_loss = 1.056
+<pre>Epoch   0 Batch    0/4   train_loss = 8.822
+Epoch   7 Batch    2/4   train_loss = 6.178
+Epoch  15 Batch    0/4   train_loss = 5.837
+Epoch  22 Batch    2/4   train_loss = 5.630
+Epoch  30 Batch    0/4   train_loss = 5.333
+Epoch  37 Batch    2/4   train_loss = 5.167
+Epoch  45 Batch    0/4   train_loss = 4.912
+Epoch  52 Batch    2/4   train_loss = 4.777
+Epoch  60 Batch    0/4   train_loss = 4.585
+Epoch  67 Batch    2/4   train_loss = 4.488
+Epoch  75 Batch    0/4   train_loss = 4.340
+Epoch  82 Batch    2/4   train_loss = 4.264
+Epoch  90 Batch    0/4   train_loss = 4.131
+Epoch  97 Batch    2/4   train_loss = 4.059
+Epoch 105 Batch    0/4   train_loss = 3.956
+Epoch 112 Batch    2/4   train_loss = 3.886
+Epoch 120 Batch    0/4   train_loss = 3.786
+Epoch 127 Batch    2/4   train_loss = 3.711
+Epoch 135 Batch    0/4   train_loss = 3.634
+Epoch 142 Batch    2/4   train_loss = 3.567
+Epoch 150 Batch    0/4   train_loss = 3.503
+Epoch 157 Batch    2/4   train_loss = 3.418
+Epoch 165 Batch    0/4   train_loss = 3.365
+Epoch 172 Batch    2/4   train_loss = 3.293
+Epoch 180 Batch    0/4   train_loss = 3.251
+Epoch 187 Batch    2/4   train_loss = 3.183
+Epoch 195 Batch    0/4   train_loss = 3.143
+Epoch 202 Batch    2/4   train_loss = 3.070
+Epoch 210 Batch    0/4   train_loss = 3.039
+Epoch 217 Batch    2/4   train_loss = 2.975
+Epoch 225 Batch    0/4   train_loss = 2.947
+Epoch 232 Batch    2/4   train_loss = 2.892
+Epoch 240 Batch    0/4   train_loss = 2.852
+Epoch 247 Batch    2/4   train_loss = 2.789
+Epoch 255 Batch    0/4   train_loss = 2.776
+Epoch 262 Batch    2/4   train_loss = 2.692
+Epoch 270 Batch    0/4   train_loss = 2.682
+Epoch 277 Batch    2/4   train_loss = 2.617
+Epoch 285 Batch    0/4   train_loss = 2.593
+Epoch 292 Batch    2/4   train_loss = 2.529
+Epoch 300 Batch    0/4   train_loss = 2.510
+Epoch 307 Batch    2/4   train_loss = 2.450
+Epoch 315 Batch    0/4   train_loss = 2.437
+Epoch 322 Batch    2/4   train_loss = 2.381
+Epoch 330 Batch    0/4   train_loss = 2.364
+Epoch 337 Batch    2/4   train_loss = 2.290
+Epoch 345 Batch    0/4   train_loss = 2.295
+Epoch 352 Batch    2/4   train_loss = 2.228
+Epoch 360 Batch    0/4   train_loss = 2.212
+Epoch 367 Batch    2/4   train_loss = 2.160
+Epoch 375 Batch    0/4   train_loss = 2.160
+Epoch 382 Batch    2/4   train_loss = 2.083
+Epoch 390 Batch    0/4   train_loss = 2.080
+Epoch 397 Batch    2/4   train_loss = 2.036
+Epoch 405 Batch    0/4   train_loss = 2.035
+Epoch 412 Batch    2/4   train_loss = 1.958
+Epoch 420 Batch    0/4   train_loss = 1.968
+Epoch 427 Batch    2/4   train_loss = 1.902
+Epoch 435 Batch    0/4   train_loss = 1.921
+Epoch 442 Batch    2/4   train_loss = 1.840
+Epoch 450 Batch    0/4   train_loss = 1.855
+Epoch 457 Batch    2/4   train_loss = 1.801
+Epoch 465 Batch    0/4   train_loss = 1.798
+Epoch 472 Batch    2/4   train_loss = 1.742
+Epoch 480 Batch    0/4   train_loss = 1.747
+Epoch 487 Batch    2/4   train_loss = 1.692
+Epoch 495 Batch    0/4   train_loss = 1.696
+Epoch 502 Batch    2/4   train_loss = 1.645
+Epoch 510 Batch    0/4   train_loss = 1.649
+Epoch 517 Batch    2/4   train_loss = 1.581
+Epoch 525 Batch    0/4   train_loss = 1.597
+Epoch 532 Batch    2/4   train_loss = 1.542
+Epoch 540 Batch    0/4   train_loss = 1.540
+Epoch 547 Batch    2/4   train_loss = 1.495
+Epoch 555 Batch    0/4   train_loss = 1.510
+Epoch 562 Batch    2/4   train_loss = 1.464
+Epoch 570 Batch    0/4   train_loss = 1.475
+Epoch 577 Batch    2/4   train_loss = 1.399
+Epoch 585 Batch    0/4   train_loss = 1.424
+Epoch 592 Batch    2/4   train_loss = 1.368
+Epoch 600 Batch    0/4   train_loss = 1.378
+Epoch 607 Batch    2/4   train_loss = 1.320
+Epoch 615 Batch    0/4   train_loss = 1.335
+Epoch 622 Batch    2/4   train_loss = 1.290
+Epoch 630 Batch    0/4   train_loss = 1.293
+Epoch 637 Batch    2/4   train_loss = 1.236
+Epoch 645 Batch    0/4   train_loss = 1.260
+Epoch 652 Batch    2/4   train_loss = 1.212
+Epoch 660 Batch    0/4   train_loss = 1.227
+Epoch 667 Batch    2/4   train_loss = 1.177
+Epoch 675 Batch    0/4   train_loss = 1.202
+Epoch 682 Batch    2/4   train_loss = 1.152
+Epoch 690 Batch    0/4   train_loss = 1.156
+Epoch 697 Batch    2/4   train_loss = 1.118
+Epoch 705 Batch    0/4   train_loss = 1.122
+Epoch 712 Batch    2/4   train_loss = 1.085
+Epoch 720 Batch    0/4   train_loss = 1.088
+Epoch 727 Batch    2/4   train_loss = 1.050
+Epoch 735 Batch    0/4   train_loss = 1.068
+Epoch 742 Batch    2/4   train_loss = 1.025
+Epoch 750 Batch    0/4   train_loss = 1.048
+Epoch 757 Batch    2/4   train_loss = 1.005
+Epoch 765 Batch    0/4   train_loss = 1.017
+Epoch 772 Batch    2/4   train_loss = 0.988
+Epoch 780 Batch    0/4   train_loss = 0.981
+Epoch 787 Batch    2/4   train_loss = 0.952
+Epoch 795 Batch    0/4   train_loss = 0.962
+Epoch 802 Batch    2/4   train_loss = 0.930
+Epoch 810 Batch    0/4   train_loss = 0.942
+Epoch 817 Batch    2/4   train_loss = 0.908
+Epoch 825 Batch    0/4   train_loss = 0.919
+Epoch 832 Batch    2/4   train_loss = 0.889
+Epoch 840 Batch    0/4   train_loss = 0.888
+Epoch 847 Batch    2/4   train_loss = 0.864
+Epoch 855 Batch    0/4   train_loss = 0.875
+Epoch 862 Batch    2/4   train_loss = 0.833
+Epoch 870 Batch    0/4   train_loss = 0.850
+Epoch 877 Batch    2/4   train_loss = 0.829
+Epoch 885 Batch    0/4   train_loss = 0.823
+Epoch 892 Batch    2/4   train_loss = 0.808
+Epoch 900 Batch    0/4   train_loss = 0.815
+Epoch 907 Batch    2/4   train_loss = 0.776
+Epoch 915 Batch    0/4   train_loss = 0.790
+Epoch 922 Batch    2/4   train_loss = 0.772
+Epoch 930 Batch    0/4   train_loss = 0.782
+Epoch 937 Batch    2/4   train_loss = 0.759
+Epoch 945 Batch    0/4   train_loss = 0.770
+Epoch 952 Batch    2/4   train_loss = 0.740
+Epoch 960 Batch    0/4   train_loss = 0.750
+Epoch 967 Batch    2/4   train_loss = 0.734
+Epoch 975 Batch    0/4   train_loss = 0.736
+Epoch 982 Batch    2/4   train_loss = 0.717
+Epoch 990 Batch    0/4   train_loss = 0.716
+Epoch 997 Batch    2/4   train_loss = 0.694
 Model Trained and Saved
 </pre>
 </div>
@@ -13160,19 +13134,18 @@ Model Trained and Saved
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>homer_simpson:(bitterly) playing nursemaid to chief wiggum,&#34; and make &#39;em in my beer.
-selma_bouvier: i should all relative.
-homer_simpson:(scared) oh, who put it out! i&#39;m gonna call it all my friend.
-moe_szyslak: aw,, moe, i feel going to get a guy clean up.
-sideshow_mel: my barbara will you now dance by this beautiful, beautiful wuss was in.
-kent_brockman: i&#39;m a british / not channel six tip.
-lenny_leonard: him. not.. all an american bank?
-moe_szyslak:(emotional sob)
-moe_szyslak: you did it all me time to a party! we&#39;ll said / homer-- i thought you can&#39;t sell two someone in the opportunity,&#34; steal lisa up, they say!
-moe_szyslak: ow.
-moe_szyslak:(not surprised) homer, just say out of the tv heart. you&#39;ve got this in the woman who did you?
-glen: moron. you shouldn&#39;t beat to make amends for my disgraceful behavior...
-apu_nahasapeemapetilon:(quickly) our technical is two about
+<pre>homer_simpson: no.(hands calling this bar) greetings...
+c. _montgomery_burns: as little bart and lisa, then i&#39;ll be walking along and i&#39;m in the bar. then we were jogging and now worse.
+carl_carlson: i ain&#39;t never!
+health_inspector: well, but it was horrible today.
+marge_simpson: i thought we like a more of breath the only friend?
+roz: so, that you hello. but now to the car?
+moe_szyslak:(amid murmurs) oh, homer&#39;s using it was, you guys like me to have to their and the treasure.
+marge_simpson: how many bottles of transylvania prep?... may i want you to help with me.
+moe_szyslak: oh sure... three...
+little_man: aw, hey! i gave you from here to throw another beer! my best friend is not to old things. look, lenny,&#34; love.. i pulled a situation comedy?
+bart_simpson: y&#39;know, now ain&#39;t no / here it again.
+moe_szyslak: hey homer, you can&#39;t
 </pre>
 </div>
 </div>
