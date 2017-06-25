@@ -1,2 +1,0 @@
-# UdacityProject_3_GenerateTVscripts
-# UdacityProject_4_EnglishFrenchTranslationChatbot
